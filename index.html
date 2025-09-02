@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- SEO Meta Tags -->
+  <title>Beginner's Guide to Accessible Web Design</title>
+  <meta name="description" content="Learn how to build accessible and SEO-friendly websites using HTML5 semantic tags and best practices. Perfect for beginners.">
+
+  <!-- Open Graph for social media preview -->
+  <meta property="og:title" content="Beginner's Guide to Accessible Web Design">
+  <meta property="og:description" content="Build your first accessible, SEO-friendly web page with this step-by-step example.">
+  <meta property="og:type" content="website">
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header, nav, main, aside, footer {
+      padding: 1em;
+    }
+    nav a {
+      margin-right: 1em;
+      text-decoration: none;
+    }
+    nav a:focus {
+      outline: 2px dashed #000;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    main {
+      flex: 3;
+    }
+    aside {
+      flex: 1;
+      background-color: #f4f4f4;
+    }
+  </style>
+</head>
+
+<body>
+  <header role="banner">
+    <h1>Beginner's Guide to Accessible Web Design</h1>
+    <p>Your starting point for inclusive and optimized websites</p>
+  </header>
+
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="#introduction">Introduction</a>
+    <a href="#tips">Accessibility Tips</a>
+    <a href="#seo">SEO Basics</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <main role="main">
+      <article>
+        <section id="introduction">
+          <h2>Introduction</h2>
+          <p>Welcome! This page demonstrates how to build a basic web page using semantic HTML5, accessibility practices, and beginner-friendly SEO techniques.</p>
+          <img src="accessible-web.jpg" alt="Illustration of accessible web design" width="100%">
+        </section>
+
+        <section id="tips">
+          <h2>Accessibility Tips</h2>
+          <ul>
+            <li>Use semantic HTML5 tags like <code>&lt;main&gt;</code>, <code>&lt;header&gt;</code>, and <code>&lt;footer&gt;</code>.</li>
+            <li>Always include <code>alt</code> text for images.</li>
+            <li>Ensure proper heading structure (<code>h1</code> to <code>h6</code> in order).</li>
+            <li>Use ARIA roles only when necessary.</li>
+          </ul>
+        </section>
+
+        <section id="seo">
+          <h2>SEO Basics</h2>
+          <p>For better discoverability, include relevant keywords in:</p>
+          <ol>
+            <li>Page title and meta description</li>
+            <li>Headings (<code>h1</code>, <code>h2</code>, etc.)</li>
+            <li>Image <code>alt</code> attributes</li>
+            <li>Internal and external link text</li>
+          </ol>
+        </section>
+      </article>
+    </main>
+
+    <aside role="complementary" aria-label="Helpful Links">
+      <h2>Helpful Links</h2>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/" target="_blank" rel="noopener">W3C Accessibility Guidelines</a></li>
+        <li><a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank" rel="noopener">Google SEO Starter Guide</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer role="contentinfo">
+    <p id="contact">© 2025 Accessible Web. Built with love for learners.</p>
+    <p><a href="mailto:info@accessibleweb.com">Contact Us</a></p>
+  </footer>
+</body>
+</html>
